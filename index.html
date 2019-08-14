@@ -1,27 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-<style type="text/css" media="screen">
-body {
-  background-color: #000;
-  color: #ff1;
-  font-size:36px;
-  font-family:'Comic Sans MS'; cursive, sans-serif;
-  font weight:400;
-  }
-</style>
+  <title>First HTML Page</title>
+  <!-- NOTE: Internal CSS -->
+  <style type="text/css" media="screen">
+    /* NOTE: This is a comment */
+    body {
+        font-size: 16px;
+    }
+    header {
+      background-color: yellow !important;
+      display: flex;
+      justify-content: space-between;
+    }
+    .main {
+      background-color: purple;
+    }
+    #mainID {
+      color: orange;
+    }
+    menu ul {
+      margin: 0;
+      padding: 0;
+    }
+    menu ul li {
+      display: inline;
+    }
+  </style>
 </head>
 
-
-<body style="">
-<div class="wrapper" style="border:10px solid purple;" >
-
-
-  <p>  boogers taste better wet in the morning and girls like eat them in silence at night!</p>
-</div>
+<body>
+  <!-- This is a HTML comment -->
+  <div class="wrapper">
+    <header class="header" role="banner" style="background-color: green;">
+      <div class="logo" role="img">
+        <img src="https://picsum.photos/200" alt="company logo">
+        </div>
+      <nav>
+        <menu>
+          <ul>
+            <li>About</li>
+            <li>Forms</li>
+            <li>Events</li>
+          </ul>
+        </menu>
+      </nav>
+    </header>
+    <main class="main" id="mainID">
+      This is main
+    </main>
+    <footer class="footer">
+      This is footer
+    </footer>
+  </div>
 </body>
+
 </html>
